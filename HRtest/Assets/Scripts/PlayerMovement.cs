@@ -10,7 +10,14 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]
     private Rigidbody playerRigidbody; // 플레이어 캐릭터의 리지드바디
     [SerializeField]
-    private float walkSpeed;
+    private float walkSpeed; // 움직이는 속도
+    [SerializeField]
+    private float lookSensitivity;
+    [SerializeField]
+    private float cameraRotationLimit;
+    private float currentCameraRotationX;
+    [SerializeField]
+    private Camera theCamera;
 
     private void Start(){
         // 시작 시 사용할 컴포넌트 가져옴
@@ -23,6 +30,7 @@ public class PlayerMovement : MonoBehaviour
         // 마우스로 화면과 캐릭터를 회전
         Move();
         CameraRotation();
+        CharacterRotation();
     }
     private void Move(){
         // playerInput 컴포넌트의 키보드 입력값을 가져온다
@@ -37,6 +45,16 @@ public class PlayerMovement : MonoBehaviour
         playerRigidbody.MovePosition(playerRigidbody.position + MoveVel * Time.deltaTime);
     }
     private void CameraRotation(){
+        float cRotationX = playerInput.yms * lookSensitivity;
+        
+        currentCameraRotationX -= cRotationX;
+        currentCameraRotationX = Mathf.Clamp(currentCameraRotationX, -cameraRotationLimit, cameraRotationLimit);
 
+        theCamera.transform.localEulerAngles = new Vector3(currentCameraRotationX, 0f, 0f);
+    }
+    private void CharacterRotation(){
+        float cRotationY = playerInput.xms;
+        Vector3 characterRotationY = new Vector3(0f, cRotationY, 0f) * lookSensitivity;
+        playerRigidbody.MoveRotation(playerRigidbody.rotation * Quaternion.Euler(characterRotationY));
     }
 }
