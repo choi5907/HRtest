@@ -16630,11 +16630,11 @@ Animation:
   m_GameObject: {fileID: 1257243592823291}
   m_Enabled: 1
   serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 638c1aabbbfe367498c359af71a4b929, type: 2}
+  m_Animation: {fileID: 7400000, guid: c23ca210602391445b0f1bfdc2513912, type: 2}
   m_Animations:
-  - {fileID: 7400000, guid: 638c1aabbbfe367498c359af71a4b929, type: 2}
+  - {fileID: 7400000, guid: c23ca210602391445b0f1bfdc2513912, type: 2}
   m_WrapMode: 0
-  m_PlayAutomatically: 0
+  m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
 --- !u!1 &1754945879550269
@@ -17007,7 +17007,7 @@ GameObject:
   - component: {fileID: 3949748854017189933}
   - component: {fileID: 4953591627765186564}
   - component: {fileID: 315473710108715754}
-  - component: {fileID: 7914765594374279712}
+  - component: {fileID: 3991584971114961480}
   m_Layer: 0
   m_Name: Door Base
   m_TagString: Untagged
@@ -17015,6 +17015,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 65
   m_IsActive: 1
+--- !u!64 &3991584971114961480
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3991584971114961479}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 8c088c51437f8e84c8ccf368945d30c0, type: 3}
 --- !u!4 &4433391090178247530
 Transform:
   m_ObjectHideFlags: 0
@@ -17029,7 +17043,7 @@ Transform:
   - {fileID: 4721369456951669}
   m_Father: {fileID: 4856336011728463}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 89, z: 0}
 --- !u!33 &4953591627765186564
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -17037,18 +17051,4 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3991584971114961479}
-  m_Mesh: {fileID: 4300000, guid: 8c088c51437f8e84c8ccf368945d30c0, type: 3}
---- !u!64 &7914765594374279712
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3991584971114961479}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 8c088c51437f8e84c8ccf368945d30c0, type: 3}
