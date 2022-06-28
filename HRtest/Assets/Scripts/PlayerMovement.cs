@@ -25,7 +25,7 @@ public class PlayerMovement : MonoBehaviour
         playerRigidbody = GetComponent<Rigidbody>();
 
     }
-    private void FixedUpdate(){
+    private void Update(){
         // 키보드 입력으로 상하좌우 움직임
         // 마우스로 화면과 캐릭터를 회전
         Move();
