@@ -7,7 +7,10 @@
 - 문 열기
 1. 문 흰지 애니메이션 89도. 문에 애니메이터 제거 후 애니메이션 등록
 2. InputManager 전체 크기 +1 이름과 상호작용 키 등록
-3. Laycast 스크립트 
+3. Laycast 오브젝트 간 거리를 Static 변수에 담기
+4. 문 트리거 오브젝트로 OnMouseOver, OnMouseExit 사용
+- 오브젝트 설명 UI : OnMouseOver, Exit SetActive
+- 페이드인
 
 
 - ?
