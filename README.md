@@ -11,8 +11,9 @@
 3. Laycast 오브젝트 간 거리를 Static 변수에 담기
 4. 문 트리거 오브젝트로 OnMouseOver, OnMouseExit 사용
 - 오브젝트 설명 UI : OnMouseOver, Exit SetActive
-- 페이드인 : UI > RawImage
-
+- 페이드인 : UI > RawImage > 검정색 Alpha값 애니메이션 적용 > 스크립트에서 끄기 > 플레이어 이동 컴포넌트 Enabled 끄기 > 코루틴 시작 > 코루틴 종료 전까지 텍스트 진행
+- 트리거 : 큐브 렌더러 끄고 콜라이더 트리거 ON > 스크립트 온 트리거 플레이어 컴포넌트 끄기 & 코루틴 텍스트 진행 >
+- 아이템 획득 : 필드/실제 두가지 오브젝트를 두고 트리거 콜라이더에서 상호작용 시 SetActive ON/Off 동시 적용
 
 - ?
 1. 애니메이터 삭제 후 애니메이션 등록
