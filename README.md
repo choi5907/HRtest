@@ -11,7 +11,7 @@
 3. Laycast 오브젝트 간 거리를 Static 변수에 담기
 4. 문 트리거 오브젝트로 OnMouseOver, OnMouseExit 사용
 - 오브젝트 설명 UI : OnMouseOver, Exit SetActive
-- 페이드인
+- 페이드인 : UI > RawImage
 
 
 - ?
