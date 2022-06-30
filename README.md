@@ -1,6 +1,7 @@
 # HRtest
 > 정리
 - 이동의 세가지 방법 : Transform, AddForce, Vector의 MovePosition
+ + MovetoWard : Transform이 방향대로 쭉 이동하고 MovetoWard는 원하는 위치를 지정하여 이동한다.
 - 반전 세가지 : Rotation, Animation, SpriteRenderer Flip
 - 안개 : Particle System >> 회전 후 시간 크기 색상 변경
 - 유니티 내에서 애니메이션 생성 시 Debug 탭에서 Legacy 체크, Normal 탭에서 Once로 변경
