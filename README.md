@@ -17,6 +17,7 @@
 - 아이템 획득 : 필드/실제 두가지 오브젝트를 두고 트리거 콜라이더에서 상호작용 시 SetActive ON/Off 동시 적용
 - 점프스퀘어A : 트리거에 BGM, 오브젝트, 애니메이션 실행
 - 원거리 공격 : Raycast로 SendMessage 사용. 받은 오브젝트에서 SendMessage의 값을 적용시킴
+- 오브젝트 온/오프 체크 : gameObject.activeSelf == true
 
 
 - ?
