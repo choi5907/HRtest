@@ -23,6 +23,7 @@
 - OnCollision > Collision, OnTrigger > Collider, 충돌체크 Collision/Collider.GameObject == 비교 오브젝트
 - 추노 : Vector3.MoveTowards(쫓아갈 대상, 쫓을 대상(Vector3(x, y, z), 속도) 
  > 플레이어 주변 콜라이더와 충돌 시 속도 0, 코루틴 사용
+- 애니메이션 : animator.Play("name");, animator.CrossFade("name", 변한시간f);
 
 
 - ?
