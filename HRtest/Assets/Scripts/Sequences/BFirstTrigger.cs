@@ -9,9 +9,12 @@ namespace UnityStandardAssets.Characters.FirstPerson{
         public GameObject TextBox;
         public GameObject Point;
 
-        void OnTriggerEnter(){
-            ThePlayer.GetComponent<PlayerMovement>().enabled = false;
-            StartCoroutine(ScenePlayer());
+        void OnTriggerEnter(Collider other){
+            if(other.gameObject == ThePlayer){
+                GetComponent<BoxCollider>().enabled = false;
+                ThePlayer.GetComponent<PlayerMovement>().enabled = false;
+                StartCoroutine(ScenePlayer());
+            }
         }
         IEnumerator ScenePlayer(){
             TextBox.GetComponent<Text>().text = "Looks like a waepon on that table.";
