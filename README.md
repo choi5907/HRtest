@@ -28,6 +28,7 @@
 - 총알 : UI 총알 갯수를 static으로 얻으면 늘고 쓰면 달게
 - 안개 수치조정
 - ReflectionProve : 반사광 적용 RealTime, Indensity, 필드 조명들 RendererMode Important 변경
+- bgm : 좀비 죽기전과 죽은 후에 On/Off로 변경
 
 
 - ?
