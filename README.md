@@ -24,6 +24,8 @@
 - 추노 : Vector3.MoveTowards(쫓아갈 대상, 쫓을 대상(Vector3(x, y, z), 속도) 
  > 플레이어 주변 콜라이더와 충돌 시 속도 0, 코루틴 사용
 - 애니메이션 : animator.Play("name");, animator.CrossFade("name", 변한시간f);
+- 피해 입음 : UI > RawImage 색, 알파값 변경 > 적 공격 코루틴 사이에 입력
+- 총알 : UI 총알 갯수를 static으로 얻으면 늘고 쓰면 달게
 
 
 - ?
