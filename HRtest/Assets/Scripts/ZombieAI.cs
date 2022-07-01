@@ -16,6 +16,7 @@ public class ZombieAI : MonoBehaviour
     public AudioSource PainSound2;
     public AudioSource PainSound3;
     public int PainGen;
+    public GameObject theFlash;
 
     private void Start() {
         animator = theEnemy.GetComponent<Animator>();
@@ -58,6 +59,9 @@ public class ZombieAI : MonoBehaviour
             case 3 : PainSound3.Play();
             break;
         }
+        theFlash.SetActive(true);
+        yield return new WaitForSeconds(0.1f);
+        theFlash.SetActive(false);
         yield return new WaitForSeconds(1.25f);
         GlobalHealth.currentHealt -= 5;
         PainGen = Random.Range(1, 4);

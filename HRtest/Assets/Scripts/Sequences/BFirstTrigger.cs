@@ -24,4 +24,4 @@ namespace UnityStandardAssets.Characters.FirstPerson{
             Point.SetActive(true);
         }
     }
-}
+} 

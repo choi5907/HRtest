@@ -26,6 +26,12 @@ public class ZombieDeath : MonoBehaviour
             animator.Play("Z_FallingBack");
             JumpScareMusic.Stop();
             isDead = true;
+            StartCoroutine(ZDead());
         }
+    }
+    IEnumerator ZDead(){
+        yield return new WaitForSeconds(2.5f);
+        this.GetComponent<ZombieAI>().enabled = false;
+        this.GetComponent<BoxCollider>().enabled = false;
     }
 }
