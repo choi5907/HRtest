@@ -29,7 +29,9 @@
 - 안개 수치조정
 - ReflectionProve : 반사광 적용 RealTime, Indensity, 필드 조명들 RendererMode Important 변경
 - bgm : 좀비 죽기전과 죽은 후에 On/Off로 변경
-
+- // 안함 렌더링 : ProjectSetting > QuallitySetting > disable, Camera > RenderingPath > Deferred, Camera > MSAA Off
+- 포스트 프로세싱
+1. 
 
 - ?
 1. 애니메이터 삭제 후 애니메이션 등록
