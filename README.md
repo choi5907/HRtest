@@ -31,7 +31,10 @@
 - bgm : 좀비 죽기전과 죽은 후에 On/Off로 변경
 - // 안함 렌더링 : ProjectSetting > QuallitySetting > disable, Camera > RenderingPath > Deferred, Camera > MSAA Off
 - 포스트 프로세싱
-1. 
+Ambient Occlusion > Bloom > Color Grading > Grain > Vignette 적용. Bloom은 선택.
+1. Ambient Occlusion : Multi Scale, Intensity, ThicknessModifier 설정
+2. Bloom : Intensity, Diffusion, Color, Texture&Intensity 설정
+3. Color Grading : Mode > HDR, Neutral // Temperature, Post-exposure(EV), Saturation, Contrast, Channel Mixer 설정
 
 - ?
 1. 애니메이터 삭제 후 애니메이션 등록
