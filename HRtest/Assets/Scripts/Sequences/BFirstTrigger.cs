@@ -8,6 +8,7 @@ namespace UnityStandardAssets.Characters.FirstPerson{
         public GameObject ThePlayer;
         public GameObject TextBox;
         public GameObject Point;
+        public AudioSource Violin;
 
         void OnTriggerEnter(Collider other){
             if(other.gameObject == ThePlayer){
@@ -18,6 +19,7 @@ namespace UnityStandardAssets.Characters.FirstPerson{
         }
         IEnumerator ScenePlayer(){
             TextBox.GetComponent<Text>().text = "Looks like a waepon on that table.";
+            Violin.Play();
             yield return new WaitForSeconds(2.5f);
             TextBox.GetComponent<Text>().text = "";
             ThePlayer.GetComponent<PlayerMovement>().enabled = true;
