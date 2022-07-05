@@ -10,7 +10,7 @@ Material:
   m_Name: CinderBlockWhitePaintedCracked
   m_Shader: {fileID: 45, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: BAKERY_LMSPEC BAKERY_SH BAKERY_SHNONLINEAR _NORMALMAP _PARALLAXMAP
-    _SPECGLOSSMAP
+    _SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A _SPECGLOSSMAP
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -91,18 +91,18 @@ Material:
     - _BAKERY_VERTEXLMSH: 0
     - _BAKERY_VOLROTATION: 0
     - _BAKERY_VOLUME: 0
-    - _BumpScale: 1
+    - _BumpScale: 0.1
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
-    - _GlossMapScale: 1
+    - _GlossMapScale: 0.345
     - _Glossiness: 0.5
     - _GlossyReflections: 1
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
-    - _SmoothnessTextureChannel: 0
+    - _SmoothnessTextureChannel: 1
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
@@ -113,3 +113,4 @@ Material:
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
     - _VolumeInvSize: {r: 1000001, g: 1000001, b: 1000001, a: 1}
     - _VolumeMin: {r: 0, g: 0, b: 0, a: 1}
+  m_BuildTextureStacks: []

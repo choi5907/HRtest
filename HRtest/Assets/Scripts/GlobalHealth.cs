@@ -11,7 +11,7 @@ public class GlobalHealth : MonoBehaviour
     {
         internalHealth = currentHealt;
         if(currentHealt <= 0){
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(3);
         }
     }
 }
