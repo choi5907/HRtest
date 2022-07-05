@@ -35,6 +35,8 @@ Ambient Occlusion > Bloom > Color Grading > Grain > Vignette 적용. Bloom은 �
 1. Ambient Occlusion : Multi Scale, Intensity, ThicknessModifier 설정
 2. Bloom : Intensity, Diffusion, Color, Texture&Intensity 설정
 3. Color Grading : Mode > HDR, Neutral // Temperature, Post-exposure(EV), Saturation, Contrast, Channel Mixer 설정
+- Terrain
+1. 설정 후 브러쉬로 다듬기
 
 - ?
 1. 애니메이터 삭제 후 애니메이션 등록
