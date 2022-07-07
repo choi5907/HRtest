@@ -43,7 +43,7 @@ Ambient Occlusion > Bloom > Color Grading > Grain > Vignette 적용. Bloom은 �
 5. Paint Details > Edit Details > 크기, 색상 설정 > 환경설정에서 낡은색상 설정 드래그로 깔기
 6. PostProcessing 복사 > Color Grading > Saturation, Contrast -100, 100 으로 설정하여 흑백화면 만들고 Directional Light > Intensity 설정
 - SceneManager ( 씬 전환 )
-1.ImageLaw 흑백 > 알파값 0~255 FadeIn <> 255~0 FadeOut
+1.ImageLaw 흑백 > 알파값 0->255 FadeIn <=> 255->0 FadeOut
 2.Couroutine 값 주고 SetActive true > SceneManager.LoadScene으로 변경
 - Text ( 자막 ) : Text 오브젝트 스크립트에서 불러오고 .GetComponent<Text>().text = ""; & yield return WaitForSeconds(f);
 
