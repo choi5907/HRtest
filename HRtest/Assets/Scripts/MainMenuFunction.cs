@@ -10,7 +10,7 @@ public class MainMenuFunction : MonoBehaviour
     public AudioSource buttonClick;
 
     public void NewGameButton(){
-        SceneManager.LoadScene(4);
+        StartCoroutine(NewGameStart());
     }
 
     IEnumerator NewGameStart(){
