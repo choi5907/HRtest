@@ -36,7 +36,16 @@ Ambient Occlusion > Bloom > Color Grading > Grain > Vignette 적용. Bloom은 �
 2. Bloom : Intensity, Diffusion, Color, Texture&Intensity 설정
 3. Color Grading : Mode > HDR, Neutral // Temperature, Post-exposure(EV), Saturation, Contrast, Channel Mixer 설정
 - Terrain
-1. 설정 후 브러쉬로 다듬기
+1. 설정 Mesh Resulution 설정
+2. Raisy of Lower Terrain & brush로 지형 다듬기
+3. Paint Texture & brush로 바닥 색칠
+4. Paint Trees > Edit Trees > Add Trees > 브러시 크기, 빽빽함, 나무 크기 조절후 드래그로 깔기
+5. Paint Details > Edit Details > 크기, 색상 설정 > 환경설정에서 낡은색상 설정 드래그로 깔기
+6. PostProcessing 복사 > Color Grading > Saturation, Contrast -100, 100 으로 설정하여 흑백화면 만들고 Directional Light > Intensity 설정
+- SceneManager ( 씬 전환 )
+1.ImageLaw 흑백 > 알파값 0->255 FadeIn <=> 255->0 FadeOut
+2.Couroutine 값 주고 SetActive true > SceneManager.LoadScene으로 변경
+- Text ( 자막 ) : Text 오브젝트 스크립트에서 불러오고 .GetComponent<Text>().text = ""; & yield return WaitForSeconds(f);
 
 - ?
 1. 애니메이터 삭제 후 애니메이션 등록
