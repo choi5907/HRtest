@@ -19,7 +19,7 @@ public class PickUpKey : MonoBehaviour
     // 마우스 커서가 올라가 있을 때
     void OnMouseOver() {
         // 거리가 3 이하일 경우 Text 켜기
-        if(TheDistance <= 3){
+        if(TheDistance <= 5){
             ActionDisplay.SetActive(true);
             ActionText.GetComponent<Text>().text = "Pick Up Key";
             ActionText.SetActive(true);
@@ -36,6 +36,7 @@ public class PickUpKey : MonoBehaviour
                 ActionText.SetActive(false);
                 ExtraCross.SetActive(false);
                 theKey.SetActive(false);
+                GlobalInventory.firstDoorKey = true;
         }
     }
     // 커서가 내려갈 때

@@ -48,6 +48,7 @@ public class BreakableWindow : MonoBehaviour {
     int[] tris;
     public GameObject keyObject;
     public GameObject dummyKey;
+    public GameObject prRig;
 
     void Start()
     {
@@ -67,9 +68,14 @@ public class BreakableWindow : MonoBehaviour {
     void Update() {
         if(health <= 0){
             breakWindow();
+            prRig.SetActive(false);
+            StartCoroutine(DropKey());
             keyObject.SetActive(true);
             dummyKey.SetActive(false);
         }
+    }
+    IEnumerator DropKey(){
+        yield return new WaitForSeconds(2.5f);
     }
     
 

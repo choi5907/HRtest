@@ -9,7 +9,9 @@ public class LockedDoor : MonoBehaviour
     public GameObject ActionDisplay;    // 상호작용 키
     public GameObject ActionText;   // 상호작용 메시지
     public GameObject ExtraCross;   // 아이템 크로스
-    public AudioSource lockedDoor; // 열리는 소리
+    public AudioSource lockedDoor; // 잠긴 소리
+    public GameObject firstKeyDoor; // 열쇠
+    public AudioSource OpenDoor; // 열린 소리
 
     private void Update() {
         // PlayerCasting의 레이캐스트 거리를 저장
@@ -46,8 +48,17 @@ public class LockedDoor : MonoBehaviour
     }
     // 문이 열리지 않을 때
     IEnumerator DoorReset(){
-        lockedDoor.Play();
-        yield return new WaitForSeconds(1);
-        this.GetComponent<BoxCollider>().enabled = true;
+        if(GlobalInventory.firstDoorKey == false){
+            lockedDoor.Play();
+            yield return new WaitForSeconds(1);
+            this.GetComponent<BoxCollider>().enabled = true;
+        }
+        else{
+            firstKeyDoor.GetComponent<Animation>().Play("DoorAnimation2");
+            OpenDoor.Play();
+            yield return new WaitForSeconds(1.1f);
+            this.GetComponent<BoxCollider>().enabled = false;
+        }
+        
     }
 }
