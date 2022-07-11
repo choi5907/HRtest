@@ -2,9 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+// 문 클릭 시 문 여는 스크립트
 public class DoorCellOpen : MonoBehaviour
 {
+    // 거리저장변수 상호작용버튼 상호작용텍스트 문오브젝트 여는소리 오브젝트크로스오버
     public float TheDistance;
     public GameObject ActionDisplay;
     public GameObject ActionText;
@@ -24,7 +25,7 @@ public class DoorCellOpen : MonoBehaviour
             ActionDisplay.SetActive(true);
             ActionText.SetActive(true);
             ExtraCross.SetActive(true);
-        }else{
+        }else{  // 거리 벗어나면 끄기
             ActionDisplay.SetActive(false);
             ActionText.SetActive(false);
             ExtraCross.SetActive(false);
@@ -34,12 +35,13 @@ public class DoorCellOpen : MonoBehaviour
                 TheDoor.GetComponent<Animation>().Play("DoorAnimation");
                 CreakSound.Play();
                 this.GetComponent<BoxCollider>().enabled = false;
+                // 거리 벗어나면 끄기
                 ActionDisplay.SetActive(false);
                 ActionText.SetActive(false);
                 ExtraCross.SetActive(false);
         }
     }
-    // 커서가 내려갈 때
+    // 커서가 내려갈 때 끄기
     void OnMouseExit(){
         ActionDisplay.SetActive(false);
         ActionText.SetActive(false);

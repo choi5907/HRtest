@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class GlobalAmmo : MonoBehaviour
 {
+    // 총알개수 static화
     public static int ammoCount; 
     public GameObject ammoDisplay;
     public int internalAmmo;

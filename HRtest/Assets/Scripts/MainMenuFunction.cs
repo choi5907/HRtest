@@ -9,6 +9,16 @@ public class MainMenuFunction : MonoBehaviour
     public GameObject loadText;
     public AudioSource buttonClick;
 
+    public GameObject loadButton;
+    public int loadInt;
+
+    void Start() {
+        loadInt = PlayerPrefs.GetInt("AutoSave");
+        if(loadInt > 0){
+            loadButton.SetActive(true);
+        }    
+    }
+
     public void NewGameButton(){
         StartCoroutine(NewGameStart());
     }
@@ -19,5 +29,17 @@ public class MainMenuFunction : MonoBehaviour
         yield return new WaitForSeconds(3);
         loadText.SetActive(true);
         SceneManager.LoadScene(4);
+    }
+
+    public void LoadGameButton(){
+        StartCoroutine(LoadGameStart());
+    }
+    
+    IEnumerator LoadGameStart(){
+        fadeOut.SetActive(true);
+        buttonClick.Play();
+        yield return new WaitForSeconds(3);
+        loadText.SetActive(true);
+        SceneManager.LoadScene(loadInt);
     }
 }

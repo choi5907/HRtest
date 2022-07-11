@@ -10,7 +10,8 @@ public class PickUpRightEye : MonoBehaviour
     public GameObject ActionText;   // 상호작용 메시지
     public GameObject ExtraCross;   // 아이템 크로스
     public GameObject RightEye;   // 오른눈
-    public GameObject LeftEyeFade; // 왼눈 설명
+    public GameObject EyeFade; // 왼눈 Fadeout
+    public GameObject EyeText; // 왼눈 sub
 
     private void Update() {
         // PlayerCasting의 레이캐스트 거리를 저장
@@ -36,7 +37,7 @@ public class PickUpRightEye : MonoBehaviour
                 ActionDisplay.SetActive(false);
                 ActionText.SetActive(false);
                 ExtraCross.SetActive(false);
-                GlobalInventory.leftEye = true;
+                GlobalInventory.rightEye = true;
                 StartCoroutine(EyePickedUp());
         }
     }
@@ -47,9 +48,10 @@ public class PickUpRightEye : MonoBehaviour
         ExtraCross.SetActive(false);
     }
     IEnumerator EyePickedUp(){
-        LeftEyeFade.SetActive(true);
+        EyeText.GetComponent<Text>().text = "YOU GOT THE Left EYE PIECE";
+        EyeFade.SetActive(true);
         yield return new WaitForSeconds(2.5f);
-        LeftEyeFade.SetActive(false);
+        EyeFade.SetActive(false);
         RightEye.SetActive(false);
     }
 }
