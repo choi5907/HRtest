@@ -48,6 +48,16 @@ Ambient Occlusion > Bloom > Color Grading > Grain > Vignette 적용. Bloom은 �
 - Text ( 자막 ) : Text 오브젝트 스크립트에서 불러오고 .GetComponent<Text>().text = ""; & yield return WaitForSeconds(f);
 - 아이템 : 파티클 크기 주기 설정 후 아이템에 넣기
 - 날아가는 오브젝트 : 구, 상자 생성. 구에 트리거 코루틴.
+- TextMeshPro ( 컴포넌트 )
+using UnityEngine.UI;
+using TMPro;
+
+void Update()
+{
+    TextMeshPro lemonsss = GetComponent<TextMeshPro>();
+}
+구성 요소 텍스트 메쉬 프로 가져 오기
+GetComponent<TMPro.TextMeshProUGUI>().text
 
 - ?
 1. 애니메이터 삭제 후 애니메이션 등록
