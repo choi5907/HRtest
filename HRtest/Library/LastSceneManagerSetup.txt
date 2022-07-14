@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Assets_FenceChained/profile.unity
+- path: Assets/01.Scene/Intro Scene.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
