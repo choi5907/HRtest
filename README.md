@@ -59,6 +59,9 @@ Ambient Occlusion > Bloom > Color Grading > Grain > Vignette 적용. Bloom은 �
 >구성 요소 텍스트 메쉬 프로 가져 오기
 >GetComponent<TMPro.TextMeshProUGUI>().text
 
+-마우스 커서 숨기기 (Start())
+Cursor.lockState = CursorLockMode.Locked; Cursor.visible = false;
+
 - ?
 1. 애니메이터 삭제 후 애니메이션 등록
 2. Collision, Trigger 와 Laycast
