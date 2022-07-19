@@ -60,9 +60,9 @@ Ambient Occlusion > Bloom > Color Grading > Grain > Vignette 적용. Bloom은 �
 >GetComponent<TMPro.TextMeshProUGUI>().text
 
 -마우스 커서 숨기기 (Start()), 마우스 위치 고정
-Cursor.lockState = CursorLockMode.Locked; Cursor.visible = false;
-Cursor.lockState = CursorLockMode.Locked; Cursor.lockState = CursorLockMode.None;
-+ Cursor.lockState = CursorLockMode.Confined 화면밖으로 못나가게함.
+> Cursor.lockState = CursorLockMode.Locked; Cursor.visible = false;
+> Cursor.lockState = CursorLockMode.Locked; Cursor.lockState = CursorLockMode.None;
+> + Cursor.lockState = CursorLockMode.Confined 화면밖으로 못나가게함.
 
 
 
