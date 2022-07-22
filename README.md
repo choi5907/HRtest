@@ -64,7 +64,9 @@ Ambient Occlusion > Bloom > Color Grading > Grain > Vignette 적용. Bloom은 �
 > Cursor.lockState = CursorLockMode.None;
 > + Cursor.lockState = CursorLockMode.Confined 화면밖으로 못나가게함.
 
-
+- 부모, 자식 컴포넌트, 오브젝트 호출
+> .transform.GetComponentInParent
+> gameObject.transform.parent
 
 - ?
 1. 애니메이터 삭제 후 애니메이션 등록
