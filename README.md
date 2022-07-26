@@ -68,6 +68,9 @@ Ambient Occlusion > Bloom > Color Grading > Grain > Vignette 적용. Bloom은 �
 > .transform.GetComponentInParent
 > gameObject.transform.parent
 
+- 로드 후에 사라지지 않게
+> DontDestroyOnLoad()
+
 - ?
 1. 애니메이터 삭제 후 애니메이션 등록
 2. Collision, Trigger 와 Laycast
